@@ -15,10 +15,12 @@ Text:
 
 Background:
 
-- [ ] Include bacdround gradient
+- [ ] Include background gradient
 
   - bottom-left corner black
   - top-right corner green
+
+- [ ] Include rounded edges on top-left and top-right
 
 Buttons:
 
