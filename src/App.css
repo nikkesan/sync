@@ -1,43 +1,37 @@
 :root {
+  --black: #010101;
+  --fluorescent: #ccff00;
   --white: #f5f5f5;
-  --green: #ccff00;
 }
 
-.App {
-  text-align: center;
+/* Black to grey background gradient */
+body {
+  background: linear-gradient(50deg, #000000, #424448) no-repeat fixed;
+  border-radius: 50px;
+  color: var(--white);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sync Logos */
+.logo-sync {
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-x {
+  bottom: 0;
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  width: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main page image of laptop */
+.img-laptop {
+  position: fixed;
+  left: 60vw;
+  bottom: 22vh;
+  height: 170vh;
 }
