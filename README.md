@@ -24,7 +24,7 @@ Background:
 
 Buttons:
 
-- [ ] Add radial 'Personal' (default) or 'Business' options
+- [x] Add radial 'Personal' (default) or 'Business' options
   - White if selected, grey if not selected
 - [ ] Add 'Continue' button
   - invert colours on hover (green <=>black)
