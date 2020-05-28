@@ -6,11 +6,11 @@ import { MainText } from "./MainText/MainText";
 
 export const MainPage = () => {
   return (
-    <>
-      <img alt="Sync logo" className="logo-sync" src={Logo_Sync}></img>
-      <img alt="laptop" className="img-laptop" src={Img_Laptop} />
+    <div className="main_page">
+      <img alt="Sync logo" className="logo_sync" src={Logo_Sync}></img>
+      <img alt="laptop" className="img_laptop" src={Img_Laptop} />
       <MainText />
-      <img alt="X logo" className="logo-x" src={Logo_X}></img>
-    </>
+      <img alt="X logo" className="logo_x" src={Logo_X}></img>
+    </div>
   );
 };

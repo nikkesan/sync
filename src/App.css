@@ -1,26 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@font-face {
+  font-family: "Noveltica";
+  src: local("Noveltica"),
+    url(./Assets/Fonts/Noveltica-Nova-Bold.otf) format("opentype");
+}
+
 :root {
   --black: #010101;
+  --blue: #006fcf;
+  --dark-grey: #343538;
   --fluorescent: #ccff00;
+  --grey: #686868;
   --white: #f5f5f5;
 }
 
-/* Black to grey background gradient */
 body {
-  background: linear-gradient(50deg, #000000, #424448) no-repeat fixed;
-  border-radius: 50px;
   color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #2a2a32;
 }
 
 /* Sync Logos */
-.logo-sync {
+.logo_sync {
   left: 0;
-  padding: 30px;
+  padding: 40px;
   position: fixed;
   top: 0;
   width: 100px;
 }
 
-.logo-x {
+.logo_x {
   bottom: 0;
   padding: 30px;
   position: fixed;
@@ -29,9 +41,101 @@ body {
 }
 
 /* Main page image of laptop */
-.img-laptop {
+.img_laptop {
   position: fixed;
   left: 60vw;
   bottom: 22vh;
   height: 170vh;
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+.main_page {
+  background: linear-gradient(30deg, #000000, #424448) no-repeat fixed;
+  border-radius: 30px;
+  height: calc(100vh - 20px);
+  margin: 10px;
+  overflow: hidden;
+  width: calc(100vw - 20px);
+}
+
+.main_text {
+  margin-left: 10vw;
+  margin-top: 20vh;
+}
+.header {
+  grid-area: header;
+  font-family: "Noveltica", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.subheader {
+  grid-area: subheader;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+.acc_option {
+  grid-area: acc_option;
+  font-family: "Noveltica", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.circle_option {
+  grid-area: circle_option;
+  height: 45px;
+}
+
+.btn {
+  border-radius: 46px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 3px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1),
+    300ms color cubic-bezier(0.4, 0, 0.6, 1), transform 300ms ease;
+}
+
+.btn_continue {
+  grid-area: btn-continue;
+  background-color: var(--fluorescent);
+  border: solid 2px var(--fluorescent);
+  box-shadow: 0px 0px 50px -2px rgba(204, 255, 0, 0.29);
+  color: var(--black);
+}
+
+.btn_continue:hover {
+  background-color: var(--black);
+  border: solid 2px var(--fluorescent);
+  color: var(--fluorescent);
+}
+
+.img_arrow_right {
+  padding-left: 10px;
+}
+.img_arrow_right:hover {
+  color: var(--fluorescent);
+}
+
+.sign_up {
+  grid-area: sign-up;
+  color: var(--grey);
+}
+
+.btn_sign_up {
+  background-color: var(--blue);
+  border: solid 2px var(--blue);
+  color: var(--white);
+  margin-left: 20px;
+}
+
+.btn_sign_up:hover {
+  background-color: var(--black);
+  border: solid 2px var(--blue);
+  color: var(--blue);
 }

@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+// import "./Assets/Fonts/Noveltica-Nova-Bold.woff";
+// import "../public/Fonts/Noveltica-Nova-Bold.otf";
 
 ReactDOM.render(
   <React.StrictMode>

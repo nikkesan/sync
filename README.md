@@ -4,23 +4,23 @@
 
 Logos and images:
 
-- [ ] Include top left company name Sync in white
-- [ ] Include bottom right company 'X' logo in green
-- [ ] Include laptop at an angle in top right corner
+- [x] Include top left company name Sync in white
+- [x] Include bottom right company 'X' logo in green
+- [x] Include laptop at an angle in top right corner
 
 Text:
 
-- [ ] Include Header in Noveltica
-- [ ] Include tagline in Roboto
+- [x] Include Header in Noveltica
+- [x] Include tagline in Roboto
 
 Background:
 
-- [ ] Include background gradient
+- [x] Include background gradient
 
   - bottom-left corner black
-  - top-right corner green
+  - top-right corner grey
 
-- [ ] Include rounded edges on top-left and top-right
+- [x] Include rounded edges on top-left and top-right
 
 Buttons:
 
@@ -29,7 +29,11 @@ Buttons:
 - [ ] Add 'Continue' button
   - invert colours on hover (green <=>black)
   - animate to a tick with a circle
-- [ ] Add 'Sign up' button
+- [x] Add 'Sign up' button
   - invert colours on hover (blue <=> black)
+
+Deployment:
+
+- [x] Deploy to Netlify
 
 Then, add your own bells and whistles if you have time!
